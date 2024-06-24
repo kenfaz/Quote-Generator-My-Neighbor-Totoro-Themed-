@@ -1,12 +1,12 @@
 @font-face {
   font-family: "japanese";
-  src: url("nuku1.ttf");
+  src: url("Assets/Fonts/nuku1.ttf");
 }
 
 body {
   background-size: cover;
   background-color: #171a21;
-  background-image: url("wallpaper.png");
+  background-image: url("Assets/Images/wallpaper.png");
   font-family: "Japanese";
   letter-spacing: 5px;
   color: white;

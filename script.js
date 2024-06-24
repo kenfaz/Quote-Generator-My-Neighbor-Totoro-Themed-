@@ -113,9 +113,9 @@ const changeToDarkMode = function () {
     border.style.border = "2px solid #7f9087";
   }
   button.style.backgroundColor = "#253541";
-  gif.src = "totoro2.gif";
-  gif2.src = "totoro4.gif";
-  gif3.src = "totoro6.gif";
+  gif.src = "Assets/Images/totoro2.gif";
+  gif2.src = "Assets/Images/totoro4.gif";
+  gif3.src = "Assets/Images/totoro6.gif";
 };
 
 const changeToLightMode = function () {
@@ -131,17 +131,17 @@ const changeToLightMode = function () {
     border.style.border = "2px solid #ab9f83";
   }
   button.style.backgroundColor = "#9c485a";
-  gif.src = "totoro.gif";
-  gif2.src = "totoro7.gif";
-  gif3.src = "totoro5.gif";
+  gif.src = "Assets/Images/totoro.gif";
+  gif2.src = "Assets/Images/totoro7.gif";
+  gif3.src = "Assets/Images/totoro5.gif";
 };
 // Toggle dark mode/light mode.
 toggle.addEventListener("change", function () {
   if (this.checked) {
-    document.body.style.backgroundImage = "url(wallpaper2.png)";
+    document.body.style.backgroundImage = "url(Assets/Images/wallpaper2.png)";
     changeToDarkMode();
   } else {
-    document.body.style.backgroundImage = "url(wallpaper.png)";
+    document.body.style.backgroundImage = "url(Assets/Images/wallpaper.png)";
     changeToLightMode();
   }
 });
@@ -169,9 +169,13 @@ function wallpaperMediaTimelineListener(event) {
 
 function wallpaperMediaPlaybackListener(event) {
   if (event.state != 0) {
-    playbackButton.src = toggle.checked ? "pauseDark.png" : "pauseLight.png";
+    playbackButton.src = toggle.checked
+      ? "Assets/Images/pauseDark.png"
+      : "Assets/Images/pauseLight.png";
   } else {
-    playbackButton.src = toggle.checked ? "playDark.png" : "playLight.png";
+    playbackButton.src = toggle.checked
+      ? "Assets/Images/playDark.png"
+      : "Assets/Images/playLight.png";
   }
 }
 

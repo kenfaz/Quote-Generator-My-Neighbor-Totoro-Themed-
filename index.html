@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" content="width=device-width, intial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Add this feature!   
+    <audio autoplay loop>
+      <source src="Lofi.mp4" type="audio/mpeg">
+    </audio>
+    -->
+    <div class="motherDiv">
+      <div class="secondaryDiv">
+        <div class="secondaryFirstDiv">
+          <img class="borders" id="totoroGif3" src="totoro5.gif" />
+        </div>
+        <div class="dateDiv bg-color borders">
+          <div class="dateTopDiv">
+            <p id="day" class="quoteHeading shadow bigHeading font-color">
+              Date
+            </p>
+          </div>
+          <div>
+            <p class="shadow font-color" id="date">Day</p>
+            <p class="shadow font-color" id="time">Time</p>
+          </div>
+        </div>
+        <div class="gifContainer">
+          <img id="totoroGif" class="borders bg-color" src="totoro.gif" />
+          <input type="checkbox" id="darkModeToggle" />
+          <label class="darkModeToggleLabel" for="darkModeToggle"></label>
+        </div>
+      </div>
+
+      <div class="mainDiv">
+        <div class="firstDiv">
+          <img id="totoroGif2" class="borders" src="totoro7.gif" />
+        </div>
+        <div class="quoteBox bg-color borders">
+          <div class="bottomBorder">
+            <p class="quoteHeading shadow font-color">QUOTE OF THE DAY</p>
+          </div>
+          <p class="font-color" id="quoteContent">My Neighbor Totoro</p>
+          <p class="font-color" id="quoteAuthor">- Hayao Miyazaki</p>
+          <p class="font-color" id="quoteTags">Studio Ghibli</p>
+          <div class="buttonsPanels">
+            ><button class="buttons" id="produceQuote">Next</button>
+          </div>
+        </div>
+        <div class="subDiv">
+          <div class="utilitiesDiv bg-color borders">
+            <div class="bottomBorder2">
+              <p class="quoteHeading shadow font-color" id="nowPlaying">
+                NOW PLAYING
+              </p>
+            </div>
+            <p>
+              <img
+                class="borders"
+                id="thumbnailImg"
+                src="defaultAlbum.png"
+                onerror="this.src='defaultAlbum.png'; this.style.width='100px'; this.style.height='100px'"
+              />
+            </p>
+            <p id="songName">Song</p>
+            <p class="font-color" id="songArtist">Artist</p>
+            <div class="durationBar">
+              <p class="font-color" id="start">0:00</p>
+              <p class="font-color">-----------</p>
+              <img id="pauseButton" src="playLight.png" />
+              <p class="font-color">-----------</p>
+              <p class="font-color" id="end">-:--</p>
+            </div>
+          </div>
+          <div class="musicDiv bg-color borders">
+            <canvas id="canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

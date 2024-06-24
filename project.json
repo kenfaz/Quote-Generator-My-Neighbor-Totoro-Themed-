@@ -1,0 +1,31 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[h1]My Neighbor Totoro | となりのトトロ |[/h1]\nThis is a Web Based wallpaper created using HTML, CSS, and JavaScript. This wallpaper has a quote generator produced by using a quote generator [b]API[/b]. Originally, I started this project with the intention of creating an anime quote generator, but I couldn't find any API for it, some were discontinued and deprecated.\n\nI decided to center the theme to the anime \"My Neighbor Totoro\" by \tHayao Miyazaki. Just because it's cute. I hope you guys will like this. This is also my first time creating a Web Based wallpaper, so If you see anything weird or if there is a problem, don't hesitate to tell me.\n\n[h2]Wallpaper Description[/h2]\nThis wallpaper uses an open-source [b]API[/b] to retrieve random quotes => \"https://api.quotable.io/random\". Since this involves retrieving data online, internet connectivity is a must and problems may occur if you have no internet connection! Also an aspect ratio of [b]16 | 9 (1920 x 1080 minimum)[/b] is recommended or else there [b]might[/b] be problems I'm not sure tho :<. \n\nThis also has a [b]Dark Mode[/b] and [b]Light Mode[/b] toggle to switch themes based on your preference.\n\nIf the wallpaper does not match what is shown in the preview video above and you think it is a problem then you can tell me so I can fix it.\n\n[h3]Credits[/h3]\n[b]Artworks:[/b] Most of the artworks came from [b]Studio Ghibli[/b] that I found online.\n[b]Font:[/b] https://www.dafont.com/nuku-nuku.font",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"snapshotformat" : 0,
+	"snapshotoverlay" : "",
+	"tags" : [ "Anime" ],
+	"title" : "Quote Generator: My Neighbor Totoro Themed | となりのトトロ |",
+	"type" : "web",
+	"version" : 1,
+	"visibility" : "private",
+	"workshopid" : "3273737380",
+	"workshopurl" : "steam://url/CommunityFilePage/3273737380"
+}

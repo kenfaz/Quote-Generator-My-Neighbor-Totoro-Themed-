@@ -1,0 +1,392 @@
+@font-face {
+  font-family: "japanese";
+  src: url("nuku1.ttf");
+}
+
+body {
+  background-size: cover;
+  background-color: #171a21;
+  background-image: url("wallpaper.png");
+  font-family: "Japanese";
+  letter-spacing: 5px;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.motherDiv {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.firstDiv {
+  width: 100%;
+  display: flex;
+}
+
+.secondaryFirstDiv {
+  width: 100%;
+  display: flex;
+}
+.mainDiv {
+  width: 100%;
+  height: 75%;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.secondaryDiv {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subDiv {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.utilitiesDiv {
+  width: 70%;
+  height: 350px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.dateTopDiv {
+  display: block;
+}
+
+.dateDiv {
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.gifContainer {
+  width: 100%;
+  display: flex;
+}
+
+.gifContainer img {
+  width: 400px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.musicDiv {
+  width: 70%;
+  height: 130px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.quoteHeading {
+  animation-name: upAndDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  font-size: 20px;
+  color: #fff0cd;
+}
+
+.buttonsPanels {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.quoteBox {
+  width: 100%;
+  height: 500px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: #ab9f83;
+}
+
+.noteDiv {
+  width: 50%;
+  padding: 0px 20px;
+  border: 2px solid #30302e;
+  border-radius: 10px;
+}
+.buttons {
+  width: 30%;
+  height: 40px;
+  margin-top: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease 0s;
+  font-family: "Japanese";
+  color: #fff4db;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  border: 2px solid #aca084;
+}
+
+.durationBar {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.darkModeToggleLabel {
+  width: 50px;
+  height: 100px;
+  position: relative;
+  display: block;
+  background: #749186;
+  border-radius: 200px;
+  margin-right: auto;
+  margin-top: auto;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  border: 2px solid #efdeb5;
+  transition: transform 0.3s ease 0s;
+}
+
+.darkModeToggleLabel:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(360deg, #546b63, #749186);
+  border-radius: 50%;
+}
+
+input:not(.durationBar) {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input:checked + label {
+  background: #242424;
+}
+input:checked + .darkModeToggleLabel:after {
+  bottom: 90px;
+  transform: translateY(100%);
+  background: linear-gradient(360deg, #253541, #3a3a3a);
+}
+.darkModeToggleLabel:active:after {
+  height: -100px;
+}
+
+/* ids */
+#thumbnailImg {
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  width: 100px;
+  height: 100px;
+  /*
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    */
+}
+#produceQuote {
+  background-color: #9c485a;
+}
+#quoteContent {
+  animation-name: upAndDown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  padding-top: 10%;
+  font-size: 1.5rem;
+  color: #868cbc;
+  text-align: center;
+}
+
+#quoteAuthor {
+  color: #efdeb5;
+  transition: transform 0.3s ease 0s;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+}
+
+#quoteTags {
+  color: #efdeb5;
+  letter-spacing: 3px;
+  transition: transform 0.3s ease 0s;
+  font-size: 1rem;
+}
+
+#savedQuote {
+  padding: 10px;
+  font-size: 0.8rem;
+}
+
+#songName {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease 0s;
+}
+
+#songArtist {
+  font-size: 1rem;
+  transition: transform 0.3s ease 0s;
+}
+
+#date {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease 0s;
+}
+#day {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease 0s;
+}
+#time {
+  transition: transform 0.3s ease 0s;
+}
+
+#discImage {
+  width: 100px;
+  height: 100px;
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#canvas {
+  width: 90%;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+#totoroGif {
+  width: 440px;
+  height: 220px;
+}
+
+#totoroGif2 {
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+#totoroGif3 {
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 510px;
+  height: 225px;
+}
+
+#pauseButton {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+
+/* PseudoCodes */
+#produceQuote:hover {
+  transform: translateY(-10px);
+}
+
+#quoteAuthor:hover {
+  transform: translateY(-5px);
+}
+
+#quoteContent:hover {
+  transform: translateY(-10px);
+}
+
+#songName:hover {
+  transform: translateY(-10px);
+}
+
+#songArtist:hover {
+  transform: translateY(-5px);
+}
+#date:hover {
+  transform: translateY(-5px);
+}
+
+#time:hover {
+  transform: translateY(-5px);
+}
+
+#day:hover {
+  transform: translateY(-5px);
+}
+
+#quoteTags:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
+@keyframes upAndDown {
+  from {
+    transform: translateY(-3px);
+  }
+
+  to {
+    transform: translateY(3px);
+  }
+}
+
+/* Styles */
+.shadow {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.bigHeading {
+  font-size: 2.5rem;
+}
+.bottomBorder {
+  border-bottom: 2px solid #ab9f83;
+}
+/* Placements */
+.last-item {
+  margin-left: auto;
+}
+/* Multiples */
+.bg-color {
+  background-color: #2f302e;
+}
+
+.font-color {
+  color: #fff4db;
+}
+
+.borders {
+  border: 2px solid #ab9f83;
+}

@@ -1,5 +1,5 @@
 # Quote-Generator-My-Neighbor-Totoro-Themed-
-
+Decided to hid the wallpaper, since the wallpaper might be unstable to some devices with unusual screen aspect ratios. 
 
 
 ## My Neighbor Totoro | となりのトトロ | (runs on wallpaper engine)
